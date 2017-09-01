@@ -1,0 +1,95 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+html{
+	max-width: 980px;
+	margin: 0 auto;
+}
+body {
+	font-family: sans-serif;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.main {
+	color: #fff;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+	height: 50vh;
+	min-height:400px;
+	background: url(../img/background.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+.header {
+	height: 10vh;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	width: 90%;
+	position: relative;
+}
+.menu {
+	width: 60%;
+	
+}
+.menu dl {
+	
+	display: flex;
+	justify-content:space-around;
+	outline-style: none;
+}
+.menu-link {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+}
+h1  {
+	border: 2px solid #fff;
+	border-radius: 4px;
+    padding: 30px 60px;
+}
+
+.main-text {
+	position: relative;
+	text-align: center;
+}
+.table {
+	background-color: #f9fafc;
+	height: 100vh;
+	min-height: 600px;
+}
+.about-m {
+	display: flex;
+	justify-content:center;
+	text-align: center;
+	padding: 0px 30px;
+	font-size: 18px;
+}
+.whatlearn{
+	display: flex;
+	justify-content:space-around;
+}	
+
+h2 {
+	text-align: center;
+}
+.jobs img {
+	height: 50vh;
+	background-image: : url(../img/jobs.jpg) no-repeat;
+    background-size: cover;
+}
+.jobs p {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+.contact {
+	height: 30vh;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	
+}
