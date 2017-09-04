@@ -6,26 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
-<div class="main">
-    <div class="main-overlay"></div>
-    <div class="header">
-        <div class="logo">
-            <img src="img/logo.png" alt="logo">
+    <div class="main">
+        <div class="main-overlay"></div>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <a href="#" class="m-menu-link">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="menu visible-lg">
+                <ul>
+                    <li><a href="#about-me" class="menu-link">About me</a></li>
+                    <li><a href="#whatlearn" class="menu-link">What I am learing</a></li>
+                    <li><a href="#contactme" class="contact-btn menu-link">Contact me</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="menu">
-            <li><a href="#" class="menu-link">About me</a></li>
-            <li><a href="#" class="menu-link">Wtat i am learn</a></li>
-            <li><a href="#" class="menu-link">Links</a></li>
-            <li><a href="#" class="menu-link">Contact me</a></li>
+        <div id="about-me" class="main-text">
+            <span>Welcome to my site</span>
+            <h1>About me</h1>
+            <p>My name is Andrew.I have already signed up for very good courses from the most promising IT company in Ukraine - SoftServe.
+            </p>
+        </div>
+        <div class="my-photo">
+            <img src="img/myphoto.jpg" alt="AndriyZabolotnyy"></img>
         </div>
     </div>
-</div>
+    <div id="whatlearn" class="whatlearn">
+        <h2>What I am learning</h2>
+        <div class="scils">
+            <div class="scill">
+                <img src="img/html.png" alt="htmllogo"></img>
+                <span>HTML </span>
+                <button class=scill-btn ""><a href="https://www.w3schools.com/html/default.asp">HTML</a></button>
+            </div>
+            <div class="scill">
+                <img src="img/css.png" alt="csslogo"></img>
+                <span> CSS </span>
+                <button class=scill-btn ""><a href="https://www.w3schools.com/css/default.asp">CSS</a></button>
+            </div>
+            <div class="scill">
+                <img src="img/js.png" alt="jslogo"></img>
+                <span>Javascript </span>
+                <button class=scill-btn ""><a href="https://www.w3schools.com/js/default.asp">JS</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="contactme" clss="contact">
+        <form action="https://formspree.io/clstnature@gmail.com" method="POST">
+            Введіть ім'я:<br>
+            <input type="text" id="name" name="firstname" value="ім'я">
+            <br> Введіть прізвище:<br>
+            <input type="text" id="lastname" name="lastname" value="Прізвище">
+            <br><br>
+            <input type="submit" value="Відправити">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script> 
+<script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>
